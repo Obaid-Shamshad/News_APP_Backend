@@ -23,7 +23,8 @@ const getNews = async (req, res) => {
     } catch (error) {
         res.json({
             success: false,
-            message: "Failed to fetch news"
+            message: "Failed to fetch news",
+            error: error
         });
         console.log(error)
     }
