@@ -3,8 +3,6 @@ const getNews = require('../controller/controller');
 const router = express.Router();
 
 
-// Example route for news
 router.get('/getNews', getNews);
 
-
-module.exports = router;
+module.exports = router;                                                       
