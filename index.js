@@ -3,8 +3,6 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config();
 
-const PORT = 3000;
-
 
 app.use(express.json());
 
@@ -23,7 +21,4 @@ app.use('/news', require('./routes/newsRoutes'));
 
 
 
-
-app.listen(PORT, () => {
-    console.log(`Server is listening on http://localhost:${PORT}`);
-});
+module.exports = app;
